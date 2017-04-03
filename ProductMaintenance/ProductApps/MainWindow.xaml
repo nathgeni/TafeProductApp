@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <Grid Margin="0,0,0,-4">
         <Label Content="Product:" HorizontalAlignment="Left" Height="30" Margin="46,37,0,0" VerticalAlignment="Top" Width="61"/>
         <Label Content="Price $:" HorizontalAlignment="Left" Height="30" Margin="46,78,0,0" VerticalAlignment="Top" Width="61"/>
         <Label Content="Quantity:" HorizontalAlignment="Left" Height="30" Margin="48,113,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.371,0.498"/>
@@ -14,10 +14,12 @@
         <Button Name="calculateButton" Content="_Calculate" HorizontalAlignment="Left" Height="37" Margin="327,153,0,0" VerticalAlignment="Top" Width="122" Click="calculateButton_Click"/>
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
-        <Label Name="lblTotalCharge" Content="Total Charge after adding&#xA;the delivery charge($25)" HorizontalAlignment="Left" Margin="48,209,0,0" VerticalAlignment="Top"/>
-        <TextBlock Name="txtblkTotalCharge" HorizontalAlignment="Left" Margin="197,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102" Height="33"/>
-        <Label Name="lblWrapping" Content="Total Charge after adding&#xA;the wrap charge ($5):" HorizontalAlignment="Left" Margin="48,264,0,0" VerticalAlignment="Top" Width="144" Height="45"/>
-        <TextBlock Name="txtblkWrapping" HorizontalAlignment="Left" Height="45" Margin="199,264,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Name="lblTotalCharge" Content="Total Charge after adding&#xA;the delivery charge($25)" HorizontalAlignment="Left" Margin="46,190,0,0" VerticalAlignment="Top"/>
+        <TextBlock Name="txtblkTotalCharge" HorizontalAlignment="Left" Margin="197,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102" Height="33"/>
+        <Label Name="lblWrapping" Content="Total Charge after adding&#xA;the wrap charge ($5):" HorizontalAlignment="Left" Margin="46,237,0,0" VerticalAlignment="Top" Width="144" Height="45"/>
+        <TextBlock Name="txtblkWrapping" HorizontalAlignment="Left" Height="33" Margin="190,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Name="lblGST" Content="Total Charge After GST @10%:" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top" Width="180"/>
+        <TextBlock Name="txtblkGST" HorizontalAlignment="Left" Margin="195,282,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Height="26"/>
 
 
     </Grid>

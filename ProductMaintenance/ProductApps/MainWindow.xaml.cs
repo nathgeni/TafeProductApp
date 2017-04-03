@@ -38,6 +38,8 @@ namespace ProductApps
                 txtblkTotalCharge.Text = Convert.ToString(totalCharge);
                 decimal wrappingCharge = totalCharge + 5;
                 txtblkWrapping.Text = Convert.ToString(wrappingCharge);
+                decimal gstCharge = wrappingCharge * 1.10m;
+                txtblkGST.Text = Convert.ToString(gstCharge);
             }
             catch (FormatException)
             {
